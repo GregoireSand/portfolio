@@ -1,24 +1,44 @@
-import React from 'react';
-import styles from './cardList.module.scss';
-import accomodations from '../datas/datas.json';
-import { Link } from "react-router-dom";
-
+import React, { useState, useEffect } from "react";
+import styles from "./cardList.module.scss";
+import works from "../datas/datas.json";
+import Modal from "./Modal";
 
 function CardList() {
-  const cards = accomodations.map((accomodation) => (
+  const [selectedWork, setSelectedWork] = useState(null);
 
-      <div className={styles.card} key={accomodation.id}>
-        <Link to={`/accomodation/${accomodation.id}`}>
-            <img className={styles.card__image} src={accomodation.cover} alt={accomodation.title} />
-            <div className={styles.card__overlay}></div>
-            <p className={styles.card__text}>{accomodation.title}</p>
-        </Link>
-      </div>
+  const openModal = (work) => {
+    setSelectedWork(work);
+    document.body.style.overflow = "hidden"; // Empêche le scroll
+  };
+
+  const closeModal = () => {
+    setSelectedWork(null);
+    document.body.style.overflow = "auto"; // Rétablit le scroll
+  };
+
+  useEffect(() => {
+    // Nettoie l'effet lorsque le composant est démonté
+    return () => {
+      document.body.style.overflow = "auto"; // Rétablit le scroll
+    };
+  }, []);
+
+  const cards = works.map((work) => (
+    <div className={styles.card} key={work.id} onClick={() => openModal(work)}>
+      <img className={styles.card__image} src={work.cover} alt={work.title} />
+      <div className={styles.card__overlay}></div>
+      <p className={styles.card__text}>{work.title}</p>
+    </div>
   ));
 
   return (
     <>
       {cards}
+      {selectedWork && (
+        <div className={styles.overlay}>
+          <Modal work={selectedWork} onClose={closeModal} />
+        </div>
+      )}
     </>
   );
 }

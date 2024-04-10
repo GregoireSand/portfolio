@@ -1,0 +1,62 @@
+.skills__card {
+    width: 330px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    padding: 30px;
+    margin-top: 80px;
+    position: relative;
+}
+
+.skills__iconBackground {
+    width: 90px;
+    height: 90px;
+    border-radius: 60px;
+    position: absolute;
+    bottom: 290px;
+}
+
+.skills__icon {
+    width: 45px;
+    position: absolute;
+    bottom: 311px;
+}
+
+.skills__title {
+    color: #00224E;
+    font-size: 22px;
+    font-weight: 600;
+    padding-top: 20px;
+}
+
+.skills__description {
+    font-size: 16px;
+    text-align: center;
+    margin-top: -1px;
+}
+
+.skills__subtitle {
+    color: #00224E;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.skills__tagsContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 300px;
+    gap: 10px;
+}
+
+.skills__tags {
+    color: #4376AB;
+    border: 1px solid #4376AB;
+    border-radius: 15px;
+    padding: 10px;
+    font-size: 14px;
+    
+}

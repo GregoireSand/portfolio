@@ -1,0 +1,68 @@
+.modal{
+        background-color: rgba(49,49,49,.21);
+        backdrop-filter: blur(5px);
+        width: 90rem;
+        height: 45rem;
+        position: absolute;
+        top: 44rem;
+        left: 0;
+}
+
+.modal__content{
+    margin: auto;
+    margin-top: 5rem;
+    width: 75%;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.modal__closeButton {
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    padding-left: 20px;
+    padding-top: 15px;
+    border-radius: 15px;
+}
+
+.modal__title{
+    color: #00224E;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.modal__description{
+    font-size: 1.2rem;
+    text-align: center;
+    padding-right: 70px;
+    padding-left: 70px;
+}
+
+.modal__pictures {
+    height: 280px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-left: 40px;
+    margin-top: -30px;
+}
+
+.modal__pictures img {
+    width: 30%; /* Ajustez la largeur selon vos besoins */
+    height: 100%; /* La hauteur sera automatiquement ajustée pour maintenir le ratio d'aspect */
+    object-fit: contain;
+    border-radius: 20px;
+}
+
+.modal__link {
+    padding-left: 32.5rem;
+    margin-top: -30px;
+    margin-bottom: 20px;
+}
+
+.modal__decoration {
+    background-color: #00224E;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    height: 20px;
+}

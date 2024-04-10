@@ -1,0 +1,13 @@
+.section{
+    height: 700px;
+    padding-top: 20px;
+    @media (max-width: 375px) {
+            height: auto;
+    }
+    &__title{
+        display: flex;
+        justify-content: center;
+        color: #00224E;
+    }
+}
+

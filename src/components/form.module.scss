@@ -1,0 +1,95 @@
+.contactSection {
+    display: flex;
+    flex-direction: row;
+}
+
+.contact__pictureContainer{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    @media (max-width: 375px) {
+        display: none;
+    }
+}
+
+.contact__formContainer{
+    width: 50%;
+
+}
+
+label {
+    color: #00224E;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.rowNames{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    @media (max-width: 375px) {
+        flex-direction: column;
+    }
+}
+
+.formNames {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.inputControl {
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    padding-left: 10px;
+    width: 280px;
+    font-size: 16px;
+    margin-bottom: 19px;
+}
+
+.inputControlMail {
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    padding-left: 10px;
+    width: 90%;
+    font-size: 16px;
+    margin-bottom: 19px;
+
+}
+
+.inputControlMessage {
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    padding-left: 10px;
+    width: 90%;
+    font-size: 16px;
+    margin-bottom: 19px;
+    font-family: 'Open Sans';
+    padding-top: 10px;
+}
+
+.formButton {
+    cursor: pointer;
+    height: 45px;
+    width: 25%;
+    margin-top: 30px;
+    color: white;
+    background-color: #00224E;
+    border-radius: 15px;
+    border: none;
+    font-family: 'Open Sans';
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.formButton:hover {
+    background-color: #4376AB;
+}
+
+
