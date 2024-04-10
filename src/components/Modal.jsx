@@ -25,9 +25,9 @@ function Modal({ work, onClose }) {
         <h3 className={styles.modal__title}>{work.title}</h3>
         <p className={styles.modal__description}>{work.description}</p>
         <div className={styles.modal__pictures}>
-          <img src={work.pictures[0]} alt="" />
-          <img src={work.pictures[1]} alt="" />
-          <img src={work.pictures[2]} alt="" />
+          <img src={work.pictures[0]} alt="capture d'écran numéro 1" />
+          <img src={work.pictures[1]} alt="capture d'écran numéro 2" />
+          <img src={work.pictures[2]} alt="capture d'écran numéro 3" />
         </div>
         <div className={styles.modal__link}>
           <a href={work.link} target="_blank">

@@ -16,7 +16,7 @@
         "id": "2",
 		"title": "Mon Vieux Grimoire",
 		"cover": "src/assets/mvg1.png",
-		"description": "Développement du back-end d'un site de notation de livres. Création d'un serveur avec Express et connexion à une base de données MongoDB. Implémentation d'un système d'authentification sécurisé pour les utilsiateurs du site. Gestion du téléchargement et de l'optimisation des images, ainsi que l'ajout de fonctionnalités pour noter les livres et calculer la note moyenne.",
+		"description": "Développement du back-end d'un site de notation de livres. Création d'un serveur avec Express et connexion à une base de données MongoDB. Implémentation d'un système d'authentification sécurisé pour les utilsiateurs du site. Gestion du téléchargement et de l'optimisation des images, de la notation des livres et du calcul de la note moyenne.",
 		"pictures": [
 			"src/assets/mvg2.png",
 			"src/assets/mvg3.png",

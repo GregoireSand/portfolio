@@ -53,6 +53,7 @@ function Form() {
                 placeholder="Nom"
                 value={lastname}
                 onChange={(e) => setLastname(e.target.value)}
+                required
               />
             </div>
 
@@ -64,6 +65,7 @@ function Form() {
                 placeholder="Prénom"
                 value={firstname}
                 onChange={(e) => setFirstname(e.target.value)}
+                required
               />
             </div>
           </div>
@@ -76,6 +78,7 @@ function Form() {
               placeholder="E-mail"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
+              required
             />
           </div>
 
@@ -87,6 +90,7 @@ function Form() {
               placeholder="Sujet"
               value={subject}
               onChange={(e) => setSubject(e.target.value)}
+              required
             />
           </div>
 
@@ -97,6 +101,7 @@ function Form() {
               placeholder="Votre message"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
+              required
             ></textarea>
           </div>
           <button type="submit" className={styles.formButton}>

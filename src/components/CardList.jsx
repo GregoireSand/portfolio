@@ -8,18 +8,18 @@ function CardList() {
 
   const openModal = (work) => {
     setSelectedWork(work);
-    document.body.style.overflow = "hidden"; // Empêche le scroll
+    //document.body.style.overflow = "hidden"; // Empêche le scroll
   };
 
   const closeModal = () => {
     setSelectedWork(null);
-    document.body.style.overflow = "auto"; // Rétablit le scroll
+    //document.body.style.overflow = "auto"; // Rétablit le scroll
   };
 
   useEffect(() => {
     // Nettoie l'effet lorsque le composant est démonté
     return () => {
-      document.body.style.overflow = "auto"; // Rétablit le scroll
+      //document.body.style.overflow = "auto"; // Rétablit le scroll
     };
   }, []);
 

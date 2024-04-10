@@ -22,8 +22,11 @@
     object-fit: cover;
 
     img {
-      width: 40px;
+      width: 50px;
     }
+    @media (max-width: 375px) {
+      width: 40px;
+  }
   }
 
   &__links {
