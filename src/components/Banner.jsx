@@ -23,7 +23,7 @@ function Banner() {
                 <Button variant="contained" 
                   sx={{
                     backgroundColor:'#00224E',
-                    width: { xs: 290, md: 350 }, // Largeur différente pour les écrans xs et md
+                    width: { xs: 270, md: 350 }, // Largeur différente pour les écrans xs et md
                     height: 50,
                     fontFamily: 'Open Sans',
                     fontSize: 20,
@@ -38,7 +38,7 @@ function Banner() {
                 <Button variant="outlined" 
                   sx={{
                     color:'#4376AB',
-                    width: { xs: 290, md: 350 }, // Largeur différente pour les écrans xs et md
+                    width: { xs: 270, md: 350 }, // Largeur différente pour les écrans xs et md
                     height: 50,
                     fontFamily: 'Open Sans',
                     fontSize: 20,

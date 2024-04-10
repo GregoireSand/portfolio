@@ -39,6 +39,13 @@ h1 {
     font-weight: 400;
     margin-top: 150px;
     margin-left: 80px;
+    @media (max-width: 375px) {
+        margin-top: 90px;
+        margin-left: 30px;
+        width: 280px;
+        font-weight: 600;
+}
+    
 }
 
 .section__imageContainer{
@@ -47,7 +54,9 @@ h1 {
     width: 400px;
     height: 400px;
     overflow: hidden; /* Pour s'assurer que l'image est bien rognée */
-
+    @media (max-width: 375px) {
+        display: none;
+}
 }
   
   .section__imageContainer img {
@@ -61,6 +70,11 @@ h1 {
 .section__description {
     font-size: 23px;
     margin-left: 80px;
+    @media (max-width: 375px) {
+        margin-left: 30px;
+        width: 280px;
+        font-size: 20px;
+    }
 }
 
 .buttons {
@@ -72,7 +86,8 @@ h1 {
     @media (max-width: 375px) {
             gap: 40px;
             flex-direction: column;
-            margin-left: 50px;
+            margin-left: 30px;
+            margin-top: 40px;
 
     }
 }
@@ -102,5 +117,5 @@ h1 {
 .banner__icon{
     padding-left: 70px;
     animation: bounce 1s infinite;
-
+    
 }
