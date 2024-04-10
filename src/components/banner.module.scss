@@ -33,6 +33,9 @@ h1 {
 
 .section__titleContainer{
     width: 65%;
+    @media (max-width: 375px) {
+        width: 100%;
+}
 }
 
 .section__title{
@@ -41,9 +44,10 @@ h1 {
     margin-left: 80px;
     @media (max-width: 375px) {
         margin-top: 90px;
-        margin-left: 30px;
-        width: 280px;
+        margin-left: 10px;
+        width: 100%;
         font-weight: 600;
+        text-align: center;
 }
     
 }
@@ -72,8 +76,9 @@ h1 {
     margin-left: 80px;
     @media (max-width: 375px) {
         margin-left: 30px;
-        width: 280px;
+        width: auto;
         font-size: 20px;
+        text-align: center;
     }
 }
 
@@ -86,7 +91,7 @@ h1 {
     @media (max-width: 375px) {
             gap: 40px;
             flex-direction: column;
-            margin-left: 30px;
+            margin-left: 60px;
             margin-top: 40px;
 
     }
@@ -107,6 +112,9 @@ h1 {
     flex-direction: column;
     align-items: center;
     padding-top: 3rem;
+    @media (max-width: 375px) {
+        padding-top: 0.80rem;
+}
 }
 
 .banner__links{

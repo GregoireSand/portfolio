@@ -1,6 +1,9 @@
 .contactSection {
     display: flex;
     flex-direction: row;
+    @media (max-width: 375px) {
+        padding-left: 30px;
+    }
 }
 
 .contact__pictureContainer{
@@ -14,6 +17,9 @@
 
 .contact__formContainer{
     width: 50%;
+    @media (max-width: 375px) {
+        width: 100%;
+    }
 
 }
 
@@ -47,6 +53,9 @@ label {
     width: 280px;
     font-size: 16px;
     margin-bottom: 19px;
+    @media (max-width: 375px) {
+        width: 80%;
+    }
 }
 
 .inputControlMail {
@@ -86,6 +95,11 @@ label {
     font-family: 'Open Sans';
     font-size: 19px;
     font-weight: 500;
+    @media (max-width: 375px) {
+        width: 80%;
+        margin-bottom: 40px;
+        margin-left: 25px;
+    }
 }
 
 .formButton:hover {
