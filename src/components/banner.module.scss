@@ -1,129 +1,171 @@
 @keyframes bounce {
-    0%, 100% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(5px); // Modifier cette valeur pour ajuster l'amplitude du rebondissement
-    }
+  0%,
+  100% {
+    transform: translateY(0);
   }
+  50% {
+    transform: translateY(
+      5px
+    ); // Modifier cette valeur pour ajuster l'amplitude du rebondissement
+  }
+}
 
-.section__container{
-    height: 682px;
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    @media (max-width: 375px) {
-           height: auto; 
-    }
+.section__container {
+  height: 682px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  @media (max-width: 425px) {
+    height: auto;
+  }
+  @media (max-width: 375px) {
+    height: auto;
+  }
 }
 
 h1 {
-    @media (max-width: 375px) {
-            font-size: 30px;
-    }
-}
-
-.section__introduction{
-    display: flex;
-    flex-direction: row;
-    @media (max-width: 375px) {
-            flex-direction: column;
-    }
-}
-
-.section__titleContainer{
-    width: 65%;
-    @media (max-width: 375px) {
-        width: 100%;
-}
-}
-
-.section__title{
-    font-weight: 400;
-    margin-top: 150px;
-    margin-left: 80px;
-    @media (max-width: 375px) {
-        margin-top: 90px;
-        margin-left: 10px;
-        width: 100%;
-        font-weight: 600;
-        text-align: center;
-}
-    
-}
-
-.section__imageContainer{
-    margin-top: 130px;
-    border-radius: 50%;
-    width: 400px;
-    height: 400px;
-    overflow: hidden; /* Pour s'assurer que l'image est bien rognée */
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;        
-    @media (max-width: 375px) {
-        display: none;
-}
-}
-  
-  .section__imageContainer img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  @media (max-width: 768px) {
+font-size: 33px;
   }
-  
+  @media (max-width: 425px) {
+    font-size: 30px;
+  }
+  @media (max-width: 375px) {
+    font-size: 30px;
+  }
+}
+
+.section__introduction {
+  display: flex;
+  flex-direction: row;
+  @media (max-width: 425px) {
+    flex-direction: column;
+  }
+  @media (max-width: 375px) {
+    flex-direction: column;
+  }
+}
+
+.section__titleContainer {
+  width: 65%;
+  @media (max-width: 425px) {
+    width: 100%;
+  }
+  @media (max-width: 375px) {
+    width: 100%;
+  }
+}
+
+.section__title {
+  font-weight: 400;
+  margin-top: 150px;
+  margin-left: 80px;
+  @media (max-width: 425px) {
+    margin-top: 90px;
+    margin-left: 25px;
+    margin-right: 25px;
+    text-align: center;
+  }
+  @media (max-width: 375px) {
+    margin-top: 90px;
+    margin-left: 10px;
+    width: 100%;
+    font-weight: 600;
+    text-align: center;
+  }
+}
+
+.section__imageContainer {
+  margin-top: 130px;
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+  overflow: hidden; /* Pour s'assurer que l'image est bien rognée */
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  @media (max-width: 768px) {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 170px;
+  }
+  @media (max-width: 425px) {
+    display: none;
+  }
+  @media (max-width: 375px) {
+    display: none;
+  }
+}
+
+.section__imageContainer img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 .section__description {
-    font-size: 23px;
-    margin-left: 80px;
-    @media (max-width: 375px) {
-        margin-left: 30px;
-        width: auto;
-        font-size: 20px;
-        text-align: center;
-    }
+  font-size: 23px;
+  margin-left: 80px;
+
+  @media screen and (min-width: 375px) and (max-width: 425px) {
+    margin-left: 30px;
+    width: auto;
+    font-size: 20px;
+    text-align: center;
+  }
 }
 
 .buttons {
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
-    margin-top: 50px;
-    margin-left: 80px;
-    @media (max-width: 375px) {
-            gap: 40px;
-            flex-direction: column;
-            margin-left: 60px;
-            margin-top: 40px;
-
-    }
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  margin-top: 50px;
+  margin-left: 80px;
+  @media (max-width: 768px) {
+flex-direction: column;
+gap: 30px;
+  }
+  @media (max-width: 425px) {
+    gap: 40px;
+    flex-direction: column;
+    margin-left: 60px;
+    margin-top: 40px;
+  }
+  @media (max-width: 375px) {
+    gap: 40px;
+    flex-direction: column;
+    margin-left: 60px;
+    margin-top: 40px;
+  }
 }
 
 .contactButton {
-    color: #00224E;
+  color: #00224e;
 }
 
 .downloadButton {
-    color: #00224E;
-    border-color: #00224E;
-
+  color: #00224e;
+  border-color: #00224e;
 }
 
-.banner__works{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 3rem;
-    @media (max-width: 375px) {
-        padding-top: 0.80rem;
-}
-}
-
-.banner__links{
-    text-decoration: none;
-    color: #00224E;
+.banner__works {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3rem;
+  @media (max-width: 768px) {
+  }
+  @media screen and (min-width: 375px) and (max-width: 425px) {
+    padding-top: 0.8rem;
+  }
 }
 
-.banner__icon{
-    padding-left: 70px;
-    animation: bounce 1s infinite;
-    
+.banner__links {
+  text-decoration: none;
+  color: #00224e;
+}
+
+.banner__icon {
+  padding-left: 70px;
+  animation: bounce 1s infinite;
 }

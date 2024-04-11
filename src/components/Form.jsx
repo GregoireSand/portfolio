@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "./form.module.scss";
 import { db } from "./Firebase";
+import contactImage from "../assets/contact.png";
 
 function Form() {
   const [lastname, setLastname] = useState("");
@@ -38,7 +39,7 @@ function Form() {
     <div className={styles.contactSection}>
       <div className={styles.contact__pictureContainer}>
         <img
-          src="src/assets/contact.png"
+          src={contactImage}
           alt="un bras tenant une lettre sort d'un téléphone"
         />
       </div>

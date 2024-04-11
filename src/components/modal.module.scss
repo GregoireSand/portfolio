@@ -6,7 +6,7 @@
   position: absolute;
   top: 44rem;
   left: 0;
-  @media (max-width: 375px) {
+  @media screen and (min-width: 375px) and (max-width: 425px) {
     width: 100%;
     height: 1200px;
   }
@@ -19,7 +19,7 @@
   height: 73%;
   background-color: white;
   border-radius: 15px;
-  @media (max-width: 375px) {
+  @media screen and (min-width: 375px) and (max-width: 425px) {
     height: 85%;
   }
 }
@@ -31,7 +31,7 @@
   padding-left: 20px;
   padding-top: 15px;
   border-radius: 15px;
-  @media (max-width: 375px) {
+  @media screen and (min-width: 375px) and (max-width: 425px) {
     font-size: 10px;     
   }
 }
@@ -40,8 +40,8 @@
   color: #00224e;
   text-align: center;
   margin-top: 10px;
-  @media (max-width: 375px) {
-   font-size: 35px;  
+  @media screen and (min-width: 375px) and (max-width: 425px) {
+    font-size: 35px;  
    margin-top: 1px;   
   }
 }
@@ -51,7 +51,7 @@
   text-align: center;
   padding-right: 70px;
   padding-left: 70px;
-  @media (max-width: 375px) {
+  @media screen and (min-width: 375px) and (max-width: 425px) {
     font-size: 15px;
     padding: 20px;
     margin-top: -30px;
@@ -65,7 +65,7 @@
   gap: 30px;
   margin-left: 40px;
   margin-top: -30px;
-  @media (max-width: 375px) {
+  @media screen and (min-width: 375px) and (max-width: 425px) {
     flex-direction: column;
     align-items: center;
     gap: 50px;
@@ -80,7 +80,7 @@
   height: 100%; /* La hauteur sera automatiquement ajustée pour maintenir le ratio d'aspect */
   object-fit: contain;
   border-radius: 20px;
-  @media (max-width: 375px){
+  @media screen and (min-width: 375px) and (max-width: 425px) {
     width: 85%;
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
 
@@ -91,7 +91,7 @@
   padding-left: 620px;
   margin-top: -30px;
   margin-bottom: 20px;
-  @media (max-width: 375px) {
+  @media screen and (min-width: 375px) and (max-width: 425px) {
     padding-left: 150px;
     padding-top: 300px;
 }
@@ -103,8 +103,8 @@
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
   height: 20px;
-  @media (max-width: 375px) {
-        position: relative;
+  @media screen and (min-width: 375px) and (max-width: 425px) {
+    position: relative;
         top: 40px;
   }
 }

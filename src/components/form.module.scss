@@ -1,110 +1,121 @@
 .contactSection {
-    display: flex;
-    flex-direction: row;
-    @media (max-width: 375px) {
-        padding-left: 30px;
-    }
+  display: flex;
+  flex-direction: row;
+  @media (max-width: 768px) {
+margin-bottom: 30px;  }
+  @media screen and (min-width: 375px) and (max-width: 425px) {
+    padding-left: 30px;
+  }
 }
 
-.contact__pictureContainer{
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    @media (max-width: 375px) {
-        display: none;
-    }
+.contact__pictureContainer {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  @media (max-width: 425px) {
+    display: none;
+  }
+  @media (max-width: 375px) {
+    display: none;
+  }
 }
 
-.contact__formContainer{
-    width: 50%;
-    @media (max-width: 375px) {
-        width: 100%;
-    }
-
+.contact__formContainer {
+  width: 50%;
+  @media screen and (min-width: 375px) and (max-width: 425px) {
+    width: 100%;
+  }
 }
 
 label {
-    color: #00224E;
-    font-weight: 500;
-    font-size: 18px;
+  color: #00224e;
+  font-weight: 500;
+  font-size: 18px;
 }
 
-.rowNames{
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    @media (max-width: 375px) {
-        flex-direction: column;
-        gap: 1px;
-    }
+.rowNames {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+  @media (max-width: 425px) {
+    flex-direction: column;
+    gap: 1px;
+  }
+  @media (max-width: 375px) {
+    flex-direction: column;
+    gap: 1px;
+  }
 }
 
 .formNames {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .inputControl {
-    height: 40px;
-    border: none;
-    border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-    padding-left: 10px;
-    width: 280px;
-    font-size: 16px;
-    margin-bottom: 19px;
-    @media (max-width: 375px) {
-        width: 80%;
-    }
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  padding-left: 10px;
+  width: 280px;
+  font-size: 16px;
+  margin-bottom: 19px;
+  @media screen and (min-width: 375px) and (max-width: 425px) {
+    width: 80%;
+  }
 }
 
 .inputControlMail {
-    height: 40px;
-    border: none;
-    border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-    padding-left: 10px;
-    width: 90%;
-    font-size: 16px;
-    margin-bottom: 19px;
-
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  padding-left: 10px;
+  width: 90%;
+  font-size: 16px;
+  margin-bottom: 19px;
 }
 
 .inputControlMessage {
-    height: 40px;
-    border: none;
-    border-radius: 5px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-    padding-left: 10px;
-    width: 90%;
-    font-size: 16px;
-    margin-bottom: 19px;
-    font-family: 'Open Sans';
-    padding-top: 10px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+    rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  padding-left: 10px;
+  width: 90%;
+  font-size: 16px;
+  margin-bottom: 19px;
+  font-family: "Open Sans";
+  padding-top: 10px;
 }
 
 .formButton {
-    cursor: pointer;
-    height: 45px;
-    width: 25%;
-    margin-top: 30px;
-    color: white;
-    background-color: #00224E;
-    border-radius: 15px;
-    border: none;
-    font-family: 'Open Sans';
-    font-size: 19px;
-    font-weight: 500;
-    @media (max-width: 375px) {
-        width: 80%;
-        margin-bottom: 40px;
-        margin-left: 25px;
-    }
+  cursor: pointer;
+  height: 45px;
+  width: 25%;
+  margin-top: 30px;
+  color: white;
+  background-color: #00224e;
+  border-radius: 15px;
+  border: none;
+  font-family: "Open Sans";
+  font-size: 19px;
+  font-weight: 500;
+  @media screen and (min-width: 375px) and (max-width: 425px) {
+    width: 80%;
+    margin-bottom: 40px;
+    margin-left: 25px;
+  }
 }
 
 .formButton:hover {
-    background-color: #4376AB;
+  background-color: #4376ab;
 }
-
-

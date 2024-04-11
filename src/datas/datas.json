@@ -5,9 +5,9 @@
 		"cover": "src/assets/kasa1.png",
 		"description": "Implémentation du front-end d'une application en utilisant React pour créer une expérience utilisateur moderne et réactive. Utilisation de React Router pour configurer la navigation entre les différentes pages de l'application. Utilisation de SASS pour gérer le CSS et l'implémentation d'animations CSS. ",
 		"pictures": [
-			"src/assets/kasa2.png",
-			"src/assets/kasa3.png",
-			"src/assets/kasa4.png"
+			"./src/assets/kasa2.png",
+			"./src/assets/kasa3.png",
+			"./src/assets/kasa4.png"
 		],
 		"link":"https://github.com/GregoireSand/kasa"
 		
