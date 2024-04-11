@@ -2,12 +2,12 @@
 	{   
         "id": "1",
 		"title": "Kasa",
-		"cover": "src/assets/kasa1.png",
+		"cover": "https://raw.githubusercontent.com/GregoireSand/portfolio/main/src/assets/kasa1.png",
 		"description": "Implémentation du front-end d'une application en utilisant React pour créer une expérience utilisateur moderne et réactive. Utilisation de React Router pour configurer la navigation entre les différentes pages de l'application. Utilisation de SASS pour gérer le CSS et l'implémentation d'animations CSS. ",
 		"pictures": [
-			"https://raw.githubusercontent.com/GregoireSand/portfolio/main/src/assets/kasa1.png",
-			"./src/assets/kasa3.png",
-			"./src/assets/kasa4.png"
+			"https://raw.githubusercontent.com/GregoireSand/portfolio/main/src/assets/kasa2.png",
+			"https://raw.githubusercontent.com/GregoireSand/portfolio/main/src/assets/kasa3.png",
+			"https://raw.githubusercontent.com/GregoireSand/portfolio/main/src/assets/kasa4.png"
 		],
 		"link":"https://github.com/GregoireSand/kasa"
 		
@@ -15,24 +15,24 @@
     {   
         "id": "2",
 		"title": "Mon Vieux Grimoire",
-		"cover": "src/assets/mvg1.png",
+		"cover": "https://raw.githubusercontent.com/GregoireSand/portfolio/main/src/assets/mvg1.png",
 		"description": "Développement du back-end d'un site de notation de livres. Création d'un serveur avec Express et connexion à une base de données MongoDB. Implémentation d'un système d'authentification sécurisé pour les utilsiateurs du site. Gestion du téléchargement et de l'optimisation des images, de la notation des livres et du calcul de la note moyenne.",
 		"pictures": [
-			"src/assets/mvg2.png",
-			"src/assets/mvg3.png",
-			"src/assets/mvg4.png"
+			"https://raw.githubusercontent.com/GregoireSand/portfolio/main/src/assets/mvg2.png",
+			"https://raw.githubusercontent.com/GregoireSand/portfolio/main/src/assets/mvg3.png",
+			"https://raw.githubusercontent.com/GregoireSand/portfolio/main/src/assets/mvg4.png"
 		],
 		"link":"https://github.com/GregoireSand/mvg"
 	},
     {   
         "id": "3",
 		"title": "Site de Sophie Bluel",
-		"cover": "src/assets/sophiebluel1.png",
+		"cover": "https://raw.githubusercontent.com/GregoireSand/portfolio/main/src/assets/sophiebluel1.png",
 		"description":"Création d'une page web dynamique en utilisant JavaScript et en communiquant avec une API. Gestion des événements utilisateurs et la manipulation des éléments du DOM. Création d'une page de connexion pour l'admnistrateur du site ainsi qu'une modale permettant d'uploader de nouveaux médias." ,
 		"pictures": [
-			"src/assets/sophiebluel2.png",
-			"src/assets/sophiebluel3.png",
-			"src/assets/sophiebluel4.png"
+			"https://raw.githubusercontent.com/GregoireSand/portfolio/main/src/assets/sophiebluel2.png",
+			"https://raw.githubusercontent.com/GregoireSand/portfolio/main/src/assets/sophiebluel3.png",
+			"https://raw.githubusercontent.com/GregoireSand/portfolio/main/src/assets/sophiebluel4.png"
 		],
 		"link":"https://github.com/GregoireSand/sophie-bluel"
 	}

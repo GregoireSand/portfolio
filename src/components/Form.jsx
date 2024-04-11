@@ -39,7 +39,7 @@ function Form() {
     <div className={styles.contactSection}>
       <div className={styles.contact__pictureContainer}>
         <img
-          src={contactImage}
+          src="https://raw.githubusercontent.com/GregoireSand/portfolio/main/src/assets/contact.png"
           alt="un bras tenant une lettre sort d'un téléphone"
         />
       </div>
