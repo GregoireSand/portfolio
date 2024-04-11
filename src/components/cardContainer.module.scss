@@ -14,7 +14,7 @@
     align-items: center;
     gap: 40px;
     
-    @media screen and (min-width: 375px) and (max-width: 425px) {
+    @media screen and (min-width: 320px) and (max-width: 425px) {
         background-color: white;
         gap: 70px;
     }
