@@ -1,0 +1,27 @@
+@import '../index.scss';
+
+@mixin button {
+    border: 1px white solid;
+    background-color: transparent;
+}
+
+
+.landing {
+    height: 100vh;
+    background-color: $violet;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &__title {
+        color: $white;
+    }
+    &__buttons {
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+    }
+    button {
+        @include button;
+    }
+}
