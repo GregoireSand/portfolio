@@ -1,12 +1,42 @@
-import React from 'react';
-import styles from './Header.module.scss';
+import styles from "./Header.module.scss";
+import { useState, useEffect } from "react";
+import classNames from "classnames";
 
-const Header = () => {
+function Header() {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <div className={styles.header}>
-      
+    <div className={classNames(styles.header, { [styles.scrolled]: isScrolled })}>
+      <div className={styles.header__links}>
+        <a>A propos</a>
+        <a>Réalisations</a>
+      </div>
+      <a href="#">
+        <div className={styles.header__names}>
+          <p className={styles.header__firstName}>grégoire</p>
+          <p className={styles.header__lastName}>sandrock</p>
+        </div>
+      </a>
+      <div>
+        <button>Contactez-moi</button>
+      </div>
     </div>
   );
-};
+}
 
 export default Header;
