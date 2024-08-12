@@ -90,6 +90,17 @@ video {
 $violet: #681aff;
 $white: #fffefa;
 $black: #060919;
+$grey : #9ba1b7;
+
+@mixin tag {
+  text-transform: uppercase;
+  color: $violet;
+  border: 1px solid $violet;
+  border-radius: 20px;
+  background-color: #100b31;
+  width:fit-content;
+  padding: 5px 25px;
+}
 
 h1,
 h2,
@@ -108,6 +119,10 @@ h1 {
   font-weight: 700;
 }
 
+h3 {
+  font-size: 50px;
+  font-weight: 700;
+}
 a {
   text-decoration: none;
   cursor: pointer;

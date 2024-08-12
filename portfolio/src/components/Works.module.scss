@@ -1,0 +1,14 @@
+@import "../index.scss";
+
+.works {
+    &__container {
+        position: relative;
+        top: 100vh;
+        height: 100vh;
+        background-color: $black;
+    }
+    &__container h2 {
+        text-align: center;
+        color: white;
+    }
+}

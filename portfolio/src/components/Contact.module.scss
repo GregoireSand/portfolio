@@ -1,0 +1,93 @@
+@import "../index.scss";
+
+.contact{
+    &__container {
+        height: 100vh;
+        background-color: $black;
+        position: relative;
+        top: 100vh;
+        display: flex;
+        align-items: center;
+        margin-top: -2rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
+        border-top: 1px solid $grey;
+    }
+    &__leftContainer {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        margin-top: -9rem;
+    }
+    &__leftContainer h3 {
+        color: white;
+    }
+    &__leftContainerText {
+        color: $grey;
+        font-size: 20px;
+    }
+    &__leftContainerTag {
+        @include tag
+    }
+    &__rightContainer {
+        width: 50%;
+    }
+    &__rightContainer form {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    &__rightContainer label {
+        color: $grey;
+        font-family: 'Inter', sans-serif;
+        font-weight: 200;
+        font-size: 16px;
+    }
+    &__rightContainer input, 
+    &__rightContainer textarea {
+        background-color: #171a2c;
+        width: 100%;
+        margin-top: 0.5rem;
+        border: 1px solid #31364b;
+        color: $white;
+        padding-left: 1rem;
+        font-size: 17px;
+    }
+    &__rightContainer input {
+        height: 50px;
+    }
+    &__rightContainer textarea {
+        max-width: 100%;
+        padding-top: 15px;
+    }
+    &__rightContainer input:focus, 
+    &__rightContainer textarea:focus{
+        outline: none;
+        border-color: $violet;
+        caret-color: $violet;
+    } 
+    &__rightContainer button {
+        color: $black;
+        background-color: $white;
+        border: 1px solid $white;
+        font-family: "Inter", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        padding: 11px 32px;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    &__rightContainer a {
+        color: $grey;
+    }
+    &__rightContainer a:hover {
+        color: $white;
+    }
+    &__rightContainerBottom{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
