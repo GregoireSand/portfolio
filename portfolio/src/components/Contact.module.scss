@@ -1,93 +1,147 @@
 @import "../index.scss";
 
-.contact{
-    &__container {
-        height: 100vh;
-        background-color: $black;
-        position: relative;
-        top: 100vh;
-        display: flex;
-        align-items: center;
-        margin-top: -2rem;
-        padding-left: 5rem;
-        padding-right: 5rem;
-        border-top: 1px solid $grey;
+.contact {
+  &__container {
+    height: 100vh;
+    background-color: $black;
+    position: relative;
+    top: 100vh;
+    display: flex;
+    align-items: center;
+    margin-top: -2rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    border-top: 1px solid $grey;
+  }
+  &__leftContainer {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: -9rem;
+  }
+  &__leftContainer h3 {
+    color: white;
+  }
+  &__leftContainerText {
+    color: $grey;
+    font-size: 20px;
+  }
+  &__leftContainerTag {
+    @include tag;
+  }
+  &__rightContainer {
+    width: 50%;
+  }
+  &__rightContainer form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  &__rightContainer label {
+    color: $grey;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+  }
+  &__rightContainer input,
+  &__rightContainer textarea {
+    background-color: #171a2c;
+    width: 95.8%;
+    margin-top: 0.5rem;
+    border: 1px solid #31364b;
+    color: $white;
+    padding-left: 1rem;
+    font-size: 17px;
+  }
+  &__rightContainer input {
+    height: 50px;
+  }
+  &__rightContainer textarea {
+    max-width: 95.8%;
+    padding-top: 15px;
+    font-family: "Inter", sans-serif;
+    font-size: 17px;
+  }
+  &__rightContainer input:focus,
+  &__rightContainer textarea:focus {
+    outline: none;
+    border-color: $violet;
+    caret-color: $violet;
+  }
+  &__rightContainer button {
+    color: $black;
+    background-color: $white;
+    border: 1px solid $white;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 19px;
+    padding: 14px 27px;
+    border-radius: 3px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transform-origin: center center;
+    transform: scale(1); // Légère augmentation de taille au survol
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out,
+      color 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0%;
+      height: 100%;
+      background-color: $black;
+      transition: width 0.3s ease;
+      z-index: -1;
     }
-    &__leftContainer {
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        gap: 3rem;
-        margin-top: -9rem;
-    }
-    &__leftContainer h3 {
-        color: white;
-    }
-    &__leftContainerText {
-        color: $grey;
-        font-size: 20px;
-    }
-    &__leftContainerTag {
-        @include tag
-    }
-    &__rightContainer {
-        width: 50%;
-    }
-    &__rightContainer form {
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
-    }
-    &__rightContainer label {
-        color: $grey;
-        font-family: 'Inter', sans-serif;
-        font-weight: 200;
-        font-size: 16px;
-    }
-    &__rightContainer input, 
-    &__rightContainer textarea {
-        background-color: #171a2c;
+
+    &:hover {
+      transform: scale(1.05);
+      color: $white;
+
+      &::before {
         width: 100%;
-        margin-top: 0.5rem;
-        border: 1px solid #31364b;
-        color: $white;
-        padding-left: 1rem;
-        font-size: 17px;
+      }
     }
-    &__rightContainer input {
-        height: 50px;
-    }
-    &__rightContainer textarea {
-        max-width: 100%;
-        padding-top: 15px;
-    }
-    &__rightContainer input:focus, 
-    &__rightContainer textarea:focus{
-        outline: none;
-        border-color: $violet;
-        caret-color: $violet;
-    } 
-    &__rightContainer button {
-        color: $black;
-        background-color: $white;
-        border: 1px solid $white;
-        font-family: "Inter", sans-serif;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 25px;
-        padding: 11px 32px;
-        border-radius: 3px;
-        cursor: pointer;
-    }
-    &__rightContainer a {
-        color: $grey;
-    }
-    &__rightContainer a:hover {
-        color: $white;
-    }
-    &__rightContainerBottom{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+  }
+  &__rightContainer a {
+    color: $grey;
+    transition: color 0.4s ease; // Smooth color transition
+  }
+  &__rightContainer a:hover {
+    color: $white;
+  }
+  &__rightContainerBottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__rightContainerBottom a:hover {
+    color: white;
+  }
+}
+
+.rocket {
+  margin-left: 9px;
+  font-size: 22px;
+}
+
+.emailContent {
+  display: flex;
+  align-items: center;
+}
+
+.email {
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+}
+
+.envelop {
+  margin-right: 10px;
+  font-size: 20px;
 }

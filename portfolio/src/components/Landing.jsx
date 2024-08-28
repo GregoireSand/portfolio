@@ -1,3 +1,4 @@
+import React from "react";
 import styles from "./Landing.module.scss";
 
 function Landing() {
@@ -7,9 +8,11 @@ function Landing() {
         Créons ensemble <br /> des expériences web captivantes
       </h1>
       <div className={styles.landing__buttons}>
-        <button className={styles.landing__buttonFull}>Mes réalisations</button>
+        <button className={styles.landing__buttonFull}>
+          <span className={styles.landing__works}>Mes réalisations</span>
+        </button>
         <button className={styles.landing__buttonEmpty}>
-          Télécharger mon CV
+          <span className={styles.landing__resume}>Télécharger mon CV</span>
         </button>
       </div>
     </section>

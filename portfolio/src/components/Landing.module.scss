@@ -1,60 +1,104 @@
-@import '../index.scss';
-
+@import "../index.scss";
 
 .landing {
-    height: 100vh;
-    position:fixed;
-    z-index: 0;
-    background-image: url('../assets/future-grid.webp');
-    background-size: cover;
-    background-position: center;
-    background-color: $violet;
+  height: 100vh;
+  position: fixed;
+  z-index: 0;
+  background-image: url("../assets/future-grid.webp");
+  background-size: cover;
+  background-position: center;
+  background-color: $violet;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  &__title {
+    color: $white;
+    text-align: center;
+  }
+  &__buttons {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    &__title {
-        color: $white;
-        text-align: center;
+    flex-direction: row;
+    gap: 3rem;
+    margin-top: 4rem;
+  }
+  &__buttonFull {
+    color: $violet;
+    background-color: $white;
+    border: 1px solid $white;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    padding: 16px 32px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: letter-spacing 0.4s ease-in-out, background-color 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0%;
+      height: 100%;
+      background-color: $violet;
+      transition: width 0.5s ease-in-out;
+      z-index: 0;
     }
-    &__buttons {
-        display: flex;
-        flex-direction: row;
-        gap: 3rem;
-        margin-top: 4rem;
+  }
+  &__buttonFull:hover {
+    color: $white;
+    border: 1px solid $white;
+    letter-spacing: 1px;
+
+    &::before {
+      width: 100%;
     }
-    &__buttonFull {
-        color: $violet;
-        background-color: $white;
-        border: 1px solid $white;
-        font-family: "Inter", sans-serif;
-        font-weight: 300;
-        font-size: 18px;
-        line-height: 28px;
-        padding: 16px 32px;
-        border-radius: 3px;
-        cursor: pointer;
+  }
+  &__works {
+    position: relative;
+  }
+
+  &__buttonEmpty {
+    color: $white;
+    background-color: $violet;
+    border: 1px solid $white;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28px;
+    padding: 16px 32px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: letter-spacing 0.5s ease-in-out, background-color 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0%;
+      height: 100%;
+      background-color: $white;
+      transition: width 0.4s ease-in-out;
+      z-index: 0;
     }
-    &__buttonFull:hover {
-        color: $white;
-        background-color: $violet;
-        border: 1px solid $white;
+  }
+  &__buttonEmpty:hover {
+    color: $violet;
+    //border: 1px solid $violet;
+    letter-spacing: 1px;
+
+    &::before {
+      width: 100%;
     }
-    &__buttonEmpty {
-        color: $white;
-        background-color: $violet;
-        border: 1px solid $white;
-        font-family: "Inter", sans-serif;
-        font-weight: 300;
-        font-size: 18px;
-        line-height: 28px;
-        padding: 16px 32px;
-        border-radius: 3px;
-        cursor: pointer;
-    }
-    &__buttonEmpty:hover {
-        color: $violet;
-        background-color: $white;
-        border: 1px solid $violet;
-    }
+  }
+  &__resume {
+    position: relative;
+  }
 }

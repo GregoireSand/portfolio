@@ -16,28 +16,28 @@ function Contact() {
       <div className={styles.contact__rightContainer}>
         <form action="/submit-form" method="post">
           <div>
-            <label for="name">NOM</label>
+            <label htmlFor="name">NOM</label>
             <br />
             <input type="text" id="name" name="name" required />
           </div>
           <div>
-            <label for="email">EMAIL</label>
+            <label htmlFor="email">EMAIL</label>
             <br />
             <input type="email" id="email" name="email" required />
           </div>
           <div>
-            <label for="message">MESSAGE</label>
+            <label htmlFor="message">MESSAGE</label>
             <br />
             <textarea id="message" name="message" rows="5" required></textarea>
           </div>
           <div className={styles.contact__rightContainerBottom}>
-            <a href="#">
-              <FontAwesomeIcon icon={faEnvelope} style={{ color: "#9ba1b7" }} />
-              sandrockgregoire@gmail.com
+            <a href="#" className={styles.emailContent}>
+              <FontAwesomeIcon icon={faEnvelope} className={styles.envelop} />
+              <p className={styles.email}>sandrockgregoire@gmail.com</p>
             </a>
             <button type="submit">
               Envoyer
-              <IoRocketSharp />
+              <IoRocketSharp className={styles.rocket} />
             </button>
           </div>
         </form>

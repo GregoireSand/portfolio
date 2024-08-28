@@ -1,70 +1,129 @@
 @import "../index.scss";
 
 .header {
-    width: 90%;
-    position: fixed;
-    z-index: 3;
+  width: 90%;
+  position: fixed;
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0.5rem;
+  margin-left: 4rem;
+  margin-top: 1rem;
+  box-sizing: border-box;
+  &__links {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 0.5rem 0.5rem;
-    margin-left: 4rem;
-    margin-top: 1rem;
-    box-sizing: border-box;
-    &__links {
-        display: flex;
-        align-items: center;
-        gap: 2rem;
-        color: $white;
-        text-transform: uppercase;
-        font-family: "Inter", sans-serif;
-        font-weight: 200;
-        font-size: 15px;
-        padding-left: 1rem;
+    gap: 2rem;
+    color: $white;
+    text-transform: uppercase;
+    font-family: "Inter", sans-serif;
+    font-weight: 200;
+    font-size: 15px;
+    padding-left: 1rem;
+  }
+  &__links a {
+    position: relative;
+    text-decoration: none;
+  }
+
+  &__links a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: -7px;
+    left: 50%;
+    background: linear-gradient(
+      to right,
+      transparent,
+      transparent 5%,
+      #ffffff 30%,
+      #ffffff 70%,
+      transparent 95%,
+      transparent
+    );
+    transition: width 0.3s ease;
+    transform: translateX(-50%);
+  }
+
+  &__links a:hover::after {
+    width: 100%;
+  }
+  &__names {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    margin-left: -4rem;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: skew(0deg, 5deg);
     }
-    &__links a:hover {
-        text-decoration: underline;
+  }
+
+  &__firstName,
+  &__lastName {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    color: white;
+    font-size: 23px;
+    transition: transform 0.3s ease;
+    display: inline-block;
+  }
+
+  &__firstName {
+    font-weight: 500;
+
+    .header__names:hover & {
+      transform: translateY(3px);
     }
-    &__names {
-        display: flex;
-        justify-content: center;
-        gap: 5px;
-        margin-left: -4rem;
+  }
+
+  &__lastName {
+    font-weight: 200;
+
+    .header__names:hover & {
+      transform: translateY(-3px);
     }
-    &__firstName{
-        font-family: 'Roboto', sans-serif;
-        text-transform: uppercase;
-        color: white;
-        font-weight: 500;
-        font-size: 20px;
-    }
-    &__lastName {
-        font-family: 'Roboto', sans-serif;
-        text-transform: uppercase;
-        color: white;
-        font-weight: 200;
-        font-size: 20px;
-    }
-    & button {
-        color: $white;
-        border: 1px solid $white;
-        border-radius: 20px;
-        background-color: transparent;
-        padding: 10px 20px;
-        font-family: "Inter", sans-serif;
-        font-weight: 200;
-        font-size: 15px;
-        cursor: pointer;
-    }
-    & button:hover {
-        color: black;
+  }
+  & button {
+    color: $white;
+    border: 1px solid $white;
+    border-radius: 20px;
+    background-color: transparent;
+    padding: 10px 20px;
+    font-family: "Inter", sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0%;
+        height: 100%;
         background-color: $white;
+        transition: width 0.4s ease-in-out;
+        z-index: -1;
     }
+  }
+  & button:hover {
+    color: black;
+
+    &::before {
+        width: 100%;
+    }
+  }
 }
 
 .scrolled {
-    background-color:rgba(61, 57, 57, 0.5);
-    border-radius: 40px;
-    backdrop-filter: blur(10px);
-    //border: 1px solid rgb(43, 42, 42);
+  background-color: rgba(61, 57, 57, 0.5);
+  border-radius: 40px;
+  backdrop-filter: blur(10px);
 }

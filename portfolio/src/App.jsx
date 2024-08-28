@@ -3,6 +3,7 @@ import Landing from "./components/Landing";
 import About from "./components/About";
 import Contact from "./components/Contact";
 import Work from "./components/Works";
+import Footer from "./components/Footer";
 
 
 
@@ -14,6 +15,7 @@ function App() {
       <About />
       <Work />
       <Contact />
+      <Footer />
     </>
   );
 }
