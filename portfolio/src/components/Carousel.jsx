@@ -6,7 +6,7 @@ function Carousel() {
   const cards = works.map((work) => (
     <div className={styles.card} key={work.id}>
       <Link to={`/work/${work.id}`}>
-        <img src="" alt="" />
+        <img src={work.cover} alt="" />
         <div className={styles.card__overlay}>
           <a href="" className={styles.card__link}>
             <span className={styles.card__titles}>

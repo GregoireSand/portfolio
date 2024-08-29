@@ -3,7 +3,25 @@
         "id": "zefbvjh342",
         "title": "Kasa",
         "subtitle": "Site d'annonces immobilières",
-        "cover": "" ,
+        "cover": "src/assets/kasa_cover_phone_resized.png" ,
+        "pictures": [
+
+        ]
+    },
+    {
+        "id": "zefbvjh342",
+        "title": "Kasa",
+        "subtitle": "Site d'annonces immobilières",
+        "cover": "src/assets/kasa_cover_phone_resized.png" ,
+        "pictures": [
+
+        ]
+    },
+    {
+        "id": "zefbvjh342",
+        "title": "Kasa",
+        "subtitle": "Site d'annonces immobilières",
+        "cover": "src/assets/kasa_cover_phone_resized.png" ,
         "pictures": [
 
         ]
