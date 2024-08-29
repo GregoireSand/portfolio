@@ -1,20 +1,32 @@
 @import "../index.scss";
 
-.carousel {
-  //border: 2px solid red;
-  width: 22rem;
-  height: 30rem;
-  &__link {
-    border: 3px solid blue ;
-    height: 30rem;
-  }
-}
-
 .card {
-  &__titles {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  background-color: rgb(209, 71, 71);
+  width: 25rem;
+  height: 35rem;
+  border-radius: 10px;
+  &__overlay {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    background-color: rgba(22, 22, 22, 0.5); /* Blanc semi-transparent */
+    backdrop-filter: blur(5px);
   }
+  &__link {
+    height: 100%;
+    width: 100%;
+  }
+  &__titles {
+    text-align: center;
+    & h3 {
+      color: white;
+      margin-bottom: 1.5rem;
+    }
+    & p {
+      color: $grey;
+      font-size: 0.9rem;
+      font-weight: 200;
+    }
+  }
+
 }
