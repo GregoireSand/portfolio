@@ -7,13 +7,13 @@ function Footer() {
       <div className={styles.fadingLine}></div>
       <ul className={styles.footer__list}>
         <li>
-          <a href="">à propos</a>
+          <a href="#about">à propos</a>
         </li>
         <li>
-          <a href="">réalisations</a>
+          <a href="#works">réalisations</a>
         </li>
         <li>
-          <a href="">contact</a>
+          <a href="#contact">contact</a>
         </li>
       </ul>
       

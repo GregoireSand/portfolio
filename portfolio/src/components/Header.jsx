@@ -21,20 +21,22 @@ function Header() {
   }, []);
 
   return (
-    <div className={classNames(styles.header, { [styles.scrolled]: isScrolled })}>
+    <div
+      className={classNames(styles.header, { [styles.scrolled]: isScrolled })}
+    >
       <div className={styles.header__links}>
-        <a>A propos</a>
-        <a>Réalisations</a>
+        <a href="#about">A propos</a>
+        <a href="#works">Réalisations</a>
       </div>
-      <a href="#">
+      <a href="#home">
         <div className={styles.header__names}>
           <p className={styles.header__firstName}>grégoire</p>
           <p className={styles.header__lastName}>sandrock</p>
         </div>
       </a>
-      <div>
-        <button>Contactez-moi</button>
-      </div>
+      <a className={styles.header__contact} href="#contact">
+        Contactez-moi
+      </a>
     </div>
   );
 }

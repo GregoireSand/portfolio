@@ -3,7 +3,7 @@ import Carousel from "./Carousel";
 
 function Works() {
   return (
-    <div className={styles.works__container}>
+    <div className={styles.works__container} id="works">
       <div className={styles.works__titles}>
         <h4>projets</h4>
         <h2>Découvrez mes réalisations</h2>

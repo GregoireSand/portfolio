@@ -1,5 +1,5 @@
-import React from "react";
 import styles from "./Landing.module.scss";
+import cv from "../assets/CV.pdf"
 
 function Landing() {
   return (
@@ -8,12 +8,8 @@ function Landing() {
         Créons ensemble <br /> des expériences web captivantes
       </h1>
       <div className={styles.landing__buttons}>
-        <button className={styles.landing__buttonFull}>
-          <span className={styles.landing__works}>Mes réalisations</span>
-        </button>
-        <button className={styles.landing__buttonEmpty}>
-          <span className={styles.landing__resume}>Télécharger mon CV</span>
-        </button>
+          <a href="#works" className={styles.landing__works}>Mes réalisations</a>
+          <a href={cv} download="cv_gs" className={styles.landing__resume}>Télécharger mon CV</a>
       </div>
     </section>
   );

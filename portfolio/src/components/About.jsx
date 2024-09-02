@@ -2,7 +2,7 @@ import styles from "./About.module.scss";
 
 function About() {
   return (
-    <div className={styles.about}>
+    <div className={styles.about} id="about">
       <div className={styles.about__content}>
         <h5 className={styles.about__tag}>à propos</h5>
         <h3>Le titre ici</h3>

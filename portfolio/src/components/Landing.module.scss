@@ -22,7 +22,7 @@
     gap: 3rem;
     margin-top: 4rem;
   }
-  &__buttonFull {
+  &__works {
     color: $violet;
     background-color: $white;
     border: 1px solid $white;
@@ -49,7 +49,7 @@
       z-index: 0;
     }
   }
-  &__buttonFull:hover {
+  &__works:hover {
     color: $white;
     border: 1px solid $white;
     letter-spacing: 1px;
@@ -58,11 +58,9 @@
       width: 100%;
     }
   }
-  &__works {
-    position: relative;
-  }
 
-  &__buttonEmpty {
+
+  &__resume {
     color: $white;
     background-color: $violet;
     border: 1px solid $white;
@@ -89,16 +87,13 @@
       z-index: 0;
     }
   }
-  &__buttonEmpty:hover {
-    color: $violet;
-    //border: 1px solid $violet;
+  &__resume:hover {
     letter-spacing: 1px;
+    color: $violet;
+
 
     &::before {
       width: 100%;
     }
-  }
-  &__resume {
-    position: relative;
   }
 }

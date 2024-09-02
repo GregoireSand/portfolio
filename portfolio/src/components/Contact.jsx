@@ -5,7 +5,7 @@ import { IoRocketSharp } from "react-icons/io5";
 
 function Contact() {
   return (
-    <div className={styles.contact__container}>
+    <div className={styles.contact__container} id="contact">
       <div className={styles.contact__leftContainer}>
         <p className={styles.contact__leftContainerTag}>contact</p>
         <h3>Et si on travaillait ensemble ?</h3>
