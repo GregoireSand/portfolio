@@ -11,7 +11,7 @@
     margin-top: -2rem;
     padding-left: 5rem;
     padding-right: 5rem;
-    border-top: 1px solid $grey;
+    border-top: 1px solid #31364b;
   }
   &__leftContainer {
     width: 50%;
@@ -120,6 +120,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 99%;
   }
   &__rightContainerBottom a:hover {
     color: white;

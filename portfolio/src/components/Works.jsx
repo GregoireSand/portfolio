@@ -6,7 +6,7 @@ function Works() {
     <div className={styles.works__container}>
       <div className={styles.works__titles}>
         <h4>projets</h4>
-        <h2>Plongez dans mon univers</h2>
+        <h2>Découvrez mes réalisations</h2>
       </div>
       <div className={styles.carouselContainer}>
         <Carousel />

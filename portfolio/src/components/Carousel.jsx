@@ -10,8 +10,8 @@ function Carousel() {
         <div className={styles.card__overlay}>
           <a href="" className={styles.card__link}>
             <span className={styles.card__titles}>
-              <h3>Kasa</h3>
-              <p>Site d'annonces immobilières</p>
+              <h3>{work.title}</h3>
+              <p>{work.subtitle}</p>
             </span>
           </a>
         </div>
