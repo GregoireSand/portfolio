@@ -3,6 +3,7 @@
 .header {
   width: 90%;
   position: fixed;
+  border: 0.5px solid transparent;
   z-index: 3;
   display: flex;
   justify-content: space-between;
@@ -18,8 +19,8 @@
     color: $white;
     text-transform: uppercase;
     font-family: "Inter", sans-serif;
-    font-weight: 200;
-    font-size: 15px;
+    font-weight: 300;
+    font-size: 14px;
     padding-left: 1rem;
   }
   &__links a {
@@ -69,7 +70,7 @@
     font-family: "Roboto", sans-serif;
     text-transform: uppercase;
     color: white;
-    font-size: 23px;
+    font-size: 20px;
     transition: transform 0.3s ease;
     display: inline-block;
   }
@@ -125,8 +126,9 @@
 }
 
 .scrolled {
-  background-color: rgba(61, 57, 57, 0.5);
+  background-color: rgba(106, 106, 106, 0.094);
   border-radius: 40px;
+  border: 0.5px solid rgb(98, 98, 98);
   backdrop-filter: blur(10px);
   transition: background-color 0.9s ease;
 }

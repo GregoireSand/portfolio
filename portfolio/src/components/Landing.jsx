@@ -5,7 +5,7 @@ function Landing() {
   return (
     <section className={styles.landing}>
       <h1 className={styles.landing__title}>
-        Créons ensemble <br /> des expériences web captivantes
+        Créons ensemble <br /> des expériences web inoubliables
       </h1>
       <div className={styles.landing__buttons}>
           <a href="#works" className={styles.landing__works}>Mes réalisations</a>
