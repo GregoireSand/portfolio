@@ -3,8 +3,11 @@ import works from "../datas/datas.json";
 import { Link } from "react-router-dom";
 
 function Carousel() {
+
   const cards = works.map((work) => (
+
     <div className={styles.card} key={work.id}>
+
       <Link to={`/work/${work.id}`}>
         <img src={work.cover} alt="" />
         <div className={styles.card__overlay}>
@@ -16,10 +19,13 @@ function Carousel() {
           </a>
         </div>
       </Link>
+
     </div>
   ));
 
-  return <>{cards}</>;
+  return <>
+    {cards}
+  </>;
 }
 
 export default Carousel;
