@@ -6,6 +6,7 @@
   height: 38rem;
   border-radius: 10px;
   overflow: hidden; // Ajouté pour masquer le contenu qui dépasse
+  cursor: pointer;
   & img {
     height: 100%;
     width: 100%;

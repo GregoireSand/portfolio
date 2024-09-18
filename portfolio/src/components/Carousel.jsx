@@ -1,31 +1,49 @@
+import { useState } from 'react';
 import styles from "./Carousel.module.scss";
 import works from "../datas/datas.json";
-import { Link } from "react-router-dom";
+import Modal from "./BasicModal";
 
 function Carousel() {
+  const [openModal, setOpenModal] = useState(false);
+  const [selectedWork, setSelectedWork] = useState(null);
+
+  const handleOpenModal = (work) => {
+    setSelectedWork(work);
+    setOpenModal(true);
+  };
+
+  const handleCloseModal = () => {
+    setOpenModal(false);
+    setSelectedWork(null);
+  };
 
   const cards = works.map((work) => (
-
     <div className={styles.card} key={work.id}>
-
-      <Link to={`/work/${work.id}`}>
-        <img src={work.cover} alt="" />
-        <div className={styles.card__overlay}>
-          <a href="" className={styles.card__link}>
-            <span className={styles.card__titles}>
-              <h3>{work.title}</h3>
-              <p>{work.subtitle}</p>
-            </span>
-          </a>
+      <img src={work.cover} alt={work.title} />
+      <div className={styles.card__overlay}>
+        <div 
+          className={styles.card__link} 
+          onClick={() => handleOpenModal(work)}
+        >
+          <span className={styles.card__titles}>
+            <h3>{work.title}</h3>
+            <p>{work.subtitle}</p>
+          </span>
         </div>
-      </Link>
-
+      </div>
     </div>
   ));
 
-  return <>
-    {cards}
-  </>;
+  return (
+    <>
+      {cards}
+      <Modal 
+        open={openModal} 
+        handleClose={handleCloseModal}
+        work={selectedWork}
+      />
+    </>
+  );
 }
 
 export default Carousel;

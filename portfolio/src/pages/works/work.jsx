@@ -8,9 +8,10 @@ import image2 from "../../assets/kasa_accomodation_1.png";
 import image3 from "../../assets/kasa_accomodation_2.png";
 import image4 from "../../assets/kasa_about.png";
 import image5 from "../../assets/kasa_error.png";
+import image6 from "../../assets/kasa_cover_phone_resized.png"
 
 import Header from "../../components/Header";
-import Footer from "../../components/Footer";
+//import Footer from "../../components/Footer";
 import ErrorPage from "../../pages/error/Error";
 
 function Work() {
@@ -22,26 +23,27 @@ function Work() {
     return <ErrorPage />;
   }
 
+
   return (
     <div className={styles.workContainer}>
-      <div className={styles.work__background}>
+      
+      {/* Fond d'écran avec overlay */}
+      {/* <div className={styles.work__background}>
         <img src={image} alt="Background" />
         <div className={styles.work__background__overlay}></div>
-      </div>
+      </div> */}
 
       <div className={styles.work}>
         <Header />
         <span className={styles.illegalSpan}></span>
-        <Link to="/" className={styles.work__linkBackTop}>
+        <Link to="/#works" className={styles.work__linkBackTop}>
           <GoArrowLeft className={styles.work__linkBackArrowTop} />
           <p>Retour aux projets</p>
         </Link>
-        <h6 className={styles.work__date}>avril 2024</h6>
-        <h2 className={styles.work__title}>Kasa</h2>
+        <h6 className={styles.work__date}>{selectedWork.date}</h6>
+        <h2 className={styles.work__title}>{selectedWork.title}</h2>
         <p className={styles.work__description}>
-          Site internet pour Kasa, une agence immobilière. Il s'agit d'un projet
-          OpenClassrooms Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Totam magni voluptatem sunt repellendus, deserunt architecto.
+        {selectedWork.description}
         </p>
         <div className={styles.work__separation}></div>
         <Link className={styles.work__button} to="#pictures">

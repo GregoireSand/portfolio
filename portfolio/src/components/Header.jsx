@@ -1,7 +1,6 @@
 import styles from "./Header.module.scss";
 import { useState, useEffect } from "react";
 import classNames from "classnames";
-import { Link } from "react-router-dom";
 
 function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -26,18 +25,16 @@ function Header() {
       className={classNames(styles.header, { [styles.scrolled]: isScrolled })}
     >
       <div className={styles.header__links}>
-        <Link to="/">
-          <p>A propos</p>
-        </Link>
+        <a href="#about">A propos</a>
         <a href="#works">Réalisations</a>
       </div>
-      <a href="#home">
+      <a href="/">
         <div className={styles.header__names}>
           <p className={styles.header__firstName}>grégoire</p>
           <p className={styles.header__lastName}>sandrock</p>
         </div>
       </a>
-      <a className={styles.header__contact} href="#contact">
+      <a className={styles.header__contact} href="/#contact">
         Contactez-moi
       </a>
     </div>

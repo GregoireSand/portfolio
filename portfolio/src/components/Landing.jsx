@@ -1,9 +1,10 @@
 import styles from "./Landing.module.scss";
+
 import cv from "../assets/CV.pdf"
 
 function Landing() {
   return (
-    <section className={styles.landing}>
+    <section className={styles.landing} id="home">
       <h1 className={styles.landing__title}>
         Créons ensemble <br /> des expériences web inoubliables
       </h1>
