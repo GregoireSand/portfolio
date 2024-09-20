@@ -1,47 +1,37 @@
-import { useState } from 'react';
 import styles from "./Carousel.module.scss";
-import works from "../datas/datas.json";
-import Modal from "./BasicModal";
+import kasaCover from "../assets/kasa_cover_phone_resized.png";
+import sophieCover from "../assets/sophie_bluel_small.png";
+import { Link } from "react-router-dom";
 
 function Carousel() {
-  const [openModal, setOpenModal] = useState(false);
-  const [selectedWork, setSelectedWork] = useState(null);
-
-  const handleOpenModal = (work) => {
-    setSelectedWork(work);
-    setOpenModal(true);
-  };
-
-  const handleCloseModal = () => {
-    setOpenModal(false);
-    setSelectedWork(null);
-  };
-
-  const cards = works.map((work) => (
-    <div className={styles.card} key={work.id}>
-      <img src={work.cover} alt={work.title} />
-      <div className={styles.card__overlay}>
-        <div 
-          className={styles.card__link} 
-          onClick={() => handleOpenModal(work)}
-        >
-          <span className={styles.card__titles}>
-            <h3>{work.title}</h3>
-            <p>{work.subtitle}</p>
-          </span>
-        </div>
-      </div>
-    </div>
-  ));
-
   return (
     <>
-      {cards}
-      <Modal 
-        open={openModal} 
-        handleClose={handleCloseModal}
-        work={selectedWork}
-      />
+      <Link to="/kasa">
+      <div className={styles.card}>
+        <img src={kasaCover} alt="Photo de couverture" />
+        <div className={styles.card__overlay}>
+          <div className={styles.card__link}>
+            <span className={styles.card__titles}>
+              <h3>Kasa</h3>
+              <p>Agence immobilière</p>
+            </span>
+          </div>
+        </div>
+      </div>
+      </Link>
+      <Link to="/sophiebluel">
+      <div className={styles.card}>
+        <img src={sophieCover} alt="Photo de couverture" />
+        <div className={styles.card__overlay}>
+          <div className={styles.card__link}>
+            <span className={styles.card__titles}>
+              <h3>Sophie Bluel</h3>
+              <p>Site de photographe</p>
+            </span>
+          </div>
+        </div>
+      </div>
+    </Link>
     </>
   );
 }

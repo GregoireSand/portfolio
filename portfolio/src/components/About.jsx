@@ -2,7 +2,7 @@ import styles from "./About.module.scss";
 import { useState, useEffect } from 'react';
 
 
-const words = ['Coffeeholic', 'Globetrotter', 'Esprit créatif', 'Développeur'];
+const words = ['Coffeeholic', 'Globetrotter', 'Créatif', 'Développeur'];
 
 function Title() {
   const [word, setWord] = useState(words[0]);
