@@ -11,24 +11,22 @@
   }
 }
 
-
 .workContainer {
-    position: relative;
-    min-height: 100vh;
-  }
-  
+  position: relative;
+  min-height: 100vh;
+}
 
 .work {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.5rem;
   position: relative;
   z-index: 2;
   &__background {
     position: absolute;
     top: 0;
     left: 0;
-    //width: 100%;
+    width: 100%;
     height: 100vh;
     overflow: hidden;
 
@@ -46,10 +44,11 @@
       height: 100%;
       background: linear-gradient(
         to bottom,
-        
+
         #060919b9 50%,
         #060919 100%
-      );      z-index: 1;
+      );
+      z-index: 1;
     }
   }
   &__linkBackTop {
@@ -83,10 +82,11 @@
   }
   &__description {
     color: rgb(220, 220, 220);
-    width: 50%;
+    width: 70%;
     font-weight: 300;
     line-height: 1.6rem;
     padding-left: 4rem;
+    text-align: justify;
   }
   &__separation {
     height: 1px;
@@ -119,16 +119,16 @@
     flex-wrap: nowrap;
     gap: 2rem;
     & img {
-        width: 100%;
-        object-fit: cover;
+      width: 100%;
+      object-fit: cover;
     }
   }
-  &__linkBackArrowBottomContainer{
-    display: flex;
-    justify-content: center;
+  &__linkBackArrowBottomContainer {
+    margin-left: 4rem;
+    margin-bottom: 3rem;
+
   }
   &__linkBackBottom {
-    padding-left: 4rem;
     width: 20%;
     color: $white;
     font-weight: 300;
@@ -151,3 +151,8 @@
   height: 10rem;
 }
 
+.description {
+  &__strong {
+    font-weight: 700;
+  }
+}

@@ -1,5 +1,6 @@
 import styles from "../kasa/Kasa.module.scss";
 import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 import { Link } from "react-router-dom";
 import { GoArrowLeft } from "react-icons/go";
 import { FaArrowDown } from "react-icons/fa6";
@@ -31,12 +32,12 @@ function Kasa() {
         <span className={styles.illegalSpan}></span>
         <Link to="/#works" className={styles.work__linkBackTop}>
           <GoArrowLeft className={styles.work__linkBackArrowTop} />
-          <p>Retour aux projets</p>
+          <p>Retour</p>
         </Link>
         <h6 className={styles.work__date}>avril 2024</h6>
         <h2 className={styles.work__title}>Kasa</h2>
         <p className={styles.work__description}>
-          Kasa une agence immobilière fictive
+        Navigation du projet configurée avec <span className={styles.description__strong}>React Router</span>. Les routes sont gérées dans un fichier dédié. Une page 404 est implémentée pour les URL invalides. <span className={styles.description__strong}>Affichage dynamique</span> des détails en fonction de l'ID dans l'URL. Logique de <span className={styles.description__strong}>composants React réutilisables</span> (Collapse et Gallery). Utilisation des <span className={styles.description__strong}>props et hooks</span> (useState et useEffect). Récupération et manipulation des données depuis un fichier JSON. Utilisation de <span className={styles.description__strong}>Sass et réalisation d'animations</span> pour des éléments spécifiques (Collapse).
         </p>
         <div className={styles.work__separation}></div>
         <button onClick={scrollToPictures} className={styles.work__button}>
@@ -53,9 +54,10 @@ function Kasa() {
       <div className={styles.work__linkBackArrowBottomContainer}>
         <Link to="/" className={styles.work__linkBackBottom}>
           <GoArrowLeft className={styles.work__linkBackArrowBottom} />
-          <p>Retour aux projets</p>
+          <p>Retour</p>
         </Link>
       </div>
+      <Footer />
     </div>
   );
 }

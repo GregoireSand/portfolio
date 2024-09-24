@@ -6,12 +6,12 @@
     background-color: $black;
     position: relative;
     top: 100vh;
+    border-top: 1px solid #31364b;
+  }
+  &__subContainer {
     display: flex;
     align-items: center;
-    margin-top: -2rem;
-    padding-left: 5rem;
-    padding-right: 5rem;
-    border-top: 1px solid #31364b;
+    padding: 10rem 5rem;
   }
   &__leftContainer {
     width: 50%;
