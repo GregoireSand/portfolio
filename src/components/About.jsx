@@ -1,5 +1,6 @@
 import styles from "./About.module.scss";
 import { useState, useEffect } from 'react';
+import image from "../assets/about_picture.webp"
 
 
 const words = ['Coffeeholic', 'Globetrotter', 'Créatif', 'Développeur'];
@@ -29,14 +30,13 @@ function About() {
         <h5 className={styles.about__tag}>à propos</h5>
         <h3><Title /></h3>
         <p>
-          Je suis Grégoire, développeur front-end passionné par la création de sites web modernes et accessibles. 
-          Ma personnalité facile combinée à mes compétences techniques et mon enthousiasme, fait de moi un atout précieux pour tout projet web. Adaptable et curieux, j'évolue constamment dans ce domaine en perpétuel changement. 
+        Je suis Grégoire, développeur front-end spécialisé dans la création de sites web modernes et accessibles. Mon expertise technique, couplée à un réel enthousiasme pour l'innovation, fait de moi un atout précieux pour tout projet web ambitieux. Dans ce domaine en constante évolution, ma capacité d'adaptation et ma curiosité me permettent de rester à la pointe des dernières tendances et technologies. 
         </p>
       </div>
       <div className={styles.about__picture}>
         <img
           className={styles.about__image}
-          src="src/assets/about_picture.webp"
+          src={image}
           alt="Myself, admiring the Dolomites in Italy"
         />
       </div>
