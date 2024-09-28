@@ -6,6 +6,16 @@
     top: 100vh;
     height: 110vh;
     background-color: $black;
+    @media (max-width: 1440px)  {
+    }
+    @media (max-width: 1024px)  {
+    }
+    @media (max-width: 768px)  {
+    }
+    @media (max-width: 425px)  {
+      //height: 60vh;
+      top:200vh;
+    }
   }
   &__titles {
     display: flex;
@@ -13,6 +23,15 @@
     flex-direction: column;
     gap: 2rem;
     padding-top: 7rem;
+    @media (max-width: 1440px)  {
+    }
+    @media (max-width: 1024px)  {
+    padding-top: 4rem;
+    }
+    @media (max-width: 768px)  {
+    }
+    @media (max-width: 425px)  {
+    }
     & h4 {
       @include tag;
     }
@@ -30,4 +49,7 @@
   justify-content: center;
   gap: 3rem;
   margin-top: 4rem;
+  @media (max-width: 425px)  {
+    flex-direction: column;
+  }
 }

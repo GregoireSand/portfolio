@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react';
 import image from "../assets/about_picture.webp"
 
 
-const words = ['Coffeeholic', 'Globetrotter', 'Créatif', 'Développeur'];
+const words = ['Globetrotter', 'Créatif', 'Développeur', 'Coffeeholic'];
 
 function Title() {
   const [word, setWord] = useState(words[0]);

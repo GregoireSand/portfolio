@@ -7,11 +7,17 @@
     position: relative;
     top: 100vh;
     border-top: 1px solid #31364b;
+    @media (max-width: 425px)  {
+      top:200vh;
+    }
   }
   &__subContainer {
     display: flex;
     align-items: center;
     padding: 10rem 5rem;
+    @media (max-width: 425px)  {
+    flex-direction: column;
+    }
   }
   &__leftContainer {
     width: 50%;
@@ -22,11 +28,29 @@
   }
   &__leftContainer h3 {
     color: white;
+    @media (max-width: 1440px)  {
+    }
+    @media (max-width: 1024px)  {
+      font-size: 45px;
+    }
+    @media (max-width: 768px)  {
+    }
+    @media (max-width: 425px)  {
+    }
   }
   &__leftContainerText {
     color: $grey;
     font-size: 20px;
     font-weight: 300;
+    @media (max-width: 1440px)  {
+    }
+    @media (max-width: 1024px)  {
+      font-size: 15px;
+    }
+    @media (max-width: 768px)  {
+    }
+    @media (max-width: 425px)  {
+    }
   }
   &__leftContainerTag {
     @include tag;
@@ -122,6 +146,9 @@
     justify-content: space-between;
     align-items: center;
     width: 99%;
+    @media (max-width: 425px)  {
+      flex-direction: column;
+    }
   }
   &__rightContainerBottom a:hover {
     color: white;
