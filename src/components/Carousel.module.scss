@@ -7,6 +7,19 @@
   border-radius: 10px;
   overflow: hidden; // Ajouté pour masquer le contenu qui dépasse
   cursor: pointer;
+  @media (max-width: 1440px)  {
+  }
+  @media (max-width: 1024px)  {
+    font-size: 45px;
+  }
+  @media (max-width: 768px)  {
+    width: 40rem;
+    height: 20rem;
+  }
+  @media (max-width: 425px)  {
+    width: 90%;
+    height: 500px;
+  }
   & img {
     height: 100%;
     width: 100%;

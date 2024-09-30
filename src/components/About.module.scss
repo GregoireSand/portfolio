@@ -12,7 +12,7 @@
   @media (max-width: 1024px)  {
   }
   @media (max-width: 768px)  {
-    height: 90vh;
+  
   }
   @media (max-width: 425px)  {
     display: flex;
@@ -43,10 +43,12 @@
     @media (max-width: 1024px)  {
     }
     @media (max-width: 768px)  {
-      width: 100%;
+      width: 50%;
+      padding-left: 3rem;
     }
     @media (max-width: 425px)  {
-      padding: 0;
+      padding: 20px 20px;
+      width: 90%;
     }
     & p {
       padding-right: 3rem;
@@ -61,6 +63,7 @@
       }
       @media (max-width: 425px)  {
         padding: 0;
+        font-size: 1rem;
       }
     }
   }

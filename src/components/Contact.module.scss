@@ -7,16 +7,26 @@
     position: relative;
     top: 100vh;
     border-top: 1px solid #31364b;
+    @media (max-width: 768px)  {
+      top: 100vh;
+      height: 120vh;
+    }
     @media (max-width: 425px)  {
-      top:200vh;
+      top:100vh;
+      height: 150vh;
     }
   }
   &__subContainer {
     display: flex;
     align-items: center;
     padding: 10rem 5rem;
+    @media (max-width: 768px)  {
+    flex-direction: column;
+    padding: 0;
+    }
     @media (max-width: 425px)  {
     flex-direction: column;
+    padding: 0;
     }
   }
   &__leftContainer {
@@ -25,6 +35,14 @@
     flex-direction: column;
     gap: 3rem;
     margin-top: -9rem;
+    @media (max-width: 768px)  {
+    margin-top: 4rem;
+    width: 80%;
+    }
+    @media (max-width: 425px)  {
+      margin-top: 40px;
+      width: 80%;
+    }
   }
   &__leftContainer h3 {
     color: white;
@@ -34,8 +52,10 @@
       font-size: 45px;
     }
     @media (max-width: 768px)  {
+      font-size: 40px;
     }
     @media (max-width: 425px)  {
+      font-size: 38px;;
     }
   }
   &__leftContainerText {
@@ -48,8 +68,10 @@
       font-size: 15px;
     }
     @media (max-width: 768px)  {
+      font-size: 20px;
     }
     @media (max-width: 425px)  {
+      font-size: 20px;
     }
   }
   &__leftContainerTag {
@@ -57,11 +79,23 @@
   }
   &__rightContainer {
     width: 50%;
+    @media (max-width: 768px)  {
+      width: 80%;
+    }
+    @media (max-width: 425px)  {
+      width: 70%;
+    }
   }
   &__rightContainer form {
     display: flex;
     flex-direction: column;
     gap: 30px;
+    @media (max-width: 768px)  {
+      padding-top: 5rem;
+    }
+    @media (max-width: 425px)  {
+      padding-top: 5rem;
+    }
   }
   &__rightContainer label {
     color: $grey;
@@ -146,8 +180,13 @@
     justify-content: space-between;
     align-items: center;
     width: 99%;
+    @media (max-width: 768px)  {
+      padding-bottom: 3rem;
+    }
     @media (max-width: 425px)  {
       flex-direction: column;
+      gap: 2rem;
+      padding-bottom: 2rem;
     }
   }
   &__rightContainerBottom a:hover {
