@@ -4,8 +4,9 @@
   &__container {
     position: relative;
     top: 100vh;
-    height: 110vh;
+    height: 130vh;
     background-color: $black;
+    margin-bottom: -9rem;
     @media (max-width: 1440px)  {
     }
     @media (max-width: 1024px)  {
